@@ -53,7 +53,9 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return position_1
+if won?(board)
+  winning_index = won?(board)
+  win_spot_1 = winning_index[0]
+    return win_spot_1
   end
 end
