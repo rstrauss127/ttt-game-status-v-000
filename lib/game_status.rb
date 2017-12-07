@@ -39,3 +39,13 @@ def full?(board)
     board[x] != " "
   end
 end
+
+def draw?(board)
+  if (full? && !won?)
+    return true
+  elsif !full?
+    return false
+  elsif won?
+    return false
+  end
+end
