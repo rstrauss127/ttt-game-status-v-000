@@ -35,7 +35,9 @@ def won?(board)
 end
 
 def full?(board)
-  board.none? {|i| == " "}
+  board.none? do |i|
+    i == " "
+  end
 end
 
 def draw?(board)
