@@ -36,7 +36,7 @@ end
 
 def full?(board)
   board.any? do |x|
-    board[x] == " "
+    !(board[x] == " ")
   end
 end
 
