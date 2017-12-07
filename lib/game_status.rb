@@ -39,5 +39,3 @@ def full?(board)
     board[x] != " "
   end
 end
-  
-    
