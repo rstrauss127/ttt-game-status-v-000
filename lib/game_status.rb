@@ -33,3 +33,9 @@ def won?(board)
     end
   end
 end
+
+def full?(board)
+  board.all? do |x|
+    board[x] != " "
+  end
+end
