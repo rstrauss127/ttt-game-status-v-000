@@ -56,6 +56,6 @@ def winner(board)
 if won?(board)
   winning_index = won?(board)
 
-    return winning_index[0]
+    return winning_index
   end
 end
